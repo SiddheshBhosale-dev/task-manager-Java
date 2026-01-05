@@ -91,3 +91,7 @@ Java | Spring Boot | Angular
 📧 Email: siddhesh.bhosale.dev@gmail.com
 
 🔗 LinkedIn: https://linkedin.com/in/siddheshbhosale-dev
+
+## Base Repository State
+
+The current `main` branch represents the base repository state used as the foundation for defining and evaluating Task T1.
