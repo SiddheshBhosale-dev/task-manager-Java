@@ -1,4 +1,5 @@
 import java.io.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,9 +17,16 @@ class TaskManager {
         }
     }
 
-    void add(Task t) {
-        tasks.add(t);
-        save();
+    // void add(Task t) {
+    //     tasks.add(t);
+    //     save();
+    // }
+    void add(String taskName,String priority,LocalDate dueDate){
+        Task t = new Task(
+            nextId , taskName, priority, dueDate);
+            nextId++;
+            tasks.add(t);
+            save();
     }
 
     void delete(int id) {

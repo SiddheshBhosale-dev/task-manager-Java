@@ -6,8 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         TaskManager manager = new TaskManager();
 
-        int id = 1;
-
         while (true) {
             System.out.println("\n1.Add Task 2.View Tasks 3.Mark Completed 4.Delete Task 5.Exit");
             System.out.print("Choice: ");
@@ -23,8 +21,9 @@ public class Main {
                     System.out.print("Due Date (YYYY-MM-DD): ");
                     LocalDate dueDate = LocalDate.parse(sc.nextLine());
 
-                    manager.add(new Task(id, taskName, priority, dueDate));
-                    id++;
+                    manager.add(taskName, priority, dueDate);
+                    // manager.add(new Task(id, taskName, priority, dueDate));
+                    // id++;
                     System.out.println("Task added successfully");
                     break;
 
