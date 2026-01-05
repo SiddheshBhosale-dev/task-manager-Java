@@ -95,3 +95,15 @@ Java | Spring Boot | Angular
 ## Base Repository State
 
 The current `main` branch represents the base repository state used as the foundation for defining and evaluating Task T1.
+
+## Task T1: Fix Task ID Reset Issue
+### Problem?
+Right now, every time the application is restarted, task IDs start again from 1.  
+
+### What should it do?
+- Task IDs should continue increasing even after the application is restarted.
+- If tasks already exist in the saved file, the next new task should get the next available ID.
+
+### Expected result
+After this change, restarting the application should not reset task IDs.  
+Each task should always have a unique ID.
