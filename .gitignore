@@ -2,7 +2,7 @@
 *.class
 
 # Application runtime data
-*.dat
+tasks.dat
 
 # Logs
 *.log
